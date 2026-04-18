@@ -89,8 +89,8 @@ button {
   width: 40px;
 }
 
-@media (max-width :660px){
-  .landing img{
+@media (max-width :660px) {
+  .landing img {
     display: none;
   }
 }
@@ -267,6 +267,7 @@ button {
   margin-bottom: 25px;
   background-color: transparent;
   align-items: center;
+  justify-content: center;
 }
 
 .home-card {
@@ -279,6 +280,16 @@ button {
   text-align: right;
   padding: 10px;
   position: relative;
+}
+
+@media (max-width:660px) {
+  .home-card {
+    width: 100%;
+  }
+
+  .house-card {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
 }
 
 .home-card .home-img {
@@ -375,32 +386,36 @@ button {
   flex-direction: row-reverse;
   padding-bottom: 20px;
 }
+
 @media (max-width: 661px) {
-  .manegment-header > button {
+  .manegment-header>button {
     display: none;
   }
-   .manegment-header > h1{
-text-align: center;
-   }
+
+  .manegment-header>h1 {
+    text-align: center;
+  }
 }
+
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  ;
+  grid-template-rows: auto;
   gap: 10px;
   color: white
 }
 
-.big-card {
-  grid-row: span 2;
+#big-card {
+  width: 100%;
   height: 100%;
   border-radius: 20px;
-  background-image: url(/public/Frame\ 2085663181.png);
+  background-image: url(/public/Frame\ 2085663191.webp);
   background-size: cover;
   background-position: center;
 }
 
-.big-card>div,
+
 .manegment-card>div {
   display: flex;
   justify-content: space-between;
@@ -412,14 +427,12 @@ text-align: center;
 }
 
 .manegment-card {
-  width: 200px;
-  height: 200px;
+  height: 300px;
   width: 100%;
   border-radius: 20px;
 }
 
 #maneg {
-  grid-column: span 2;
   background-image: url(/public/Frame\ 2085663181.png);
   background-size: cover;
   background-position: center;
@@ -447,7 +460,6 @@ text-align: center;
   display: grid;
   align-items: self-end;
   width: 100%;
-  height: 100%;
   padding: 10px;
   text-align: right;
 }
