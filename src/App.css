@@ -230,6 +230,7 @@ button {
     margin-bottom: 25px;
     padding-top: 20px;
     gap: 25px;
+    flex-direction: column-reverse;
   }
 
   .houses-header h2 {
@@ -367,7 +368,14 @@ button {
   flex-direction: row-reverse;
   padding-bottom: 20px;
 }
-
+@media (max-width: 661px) {
+  .manegment-header > button {
+    display: none;
+  }
+   .manegment-header > h1{
+text-align: center;
+   }
+}
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -547,6 +555,7 @@ footer img {
 
   .footer-info>div>p {
     margin-bottom: 15px;
+    line-height: 1.6;
   }
 }
 
