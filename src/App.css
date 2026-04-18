@@ -89,6 +89,12 @@ button {
   width: 40px;
 }
 
+@media (max-width :660px){
+  .landing img{
+    display: none;
+  }
+}
+
 .landing-content {
   position: relative;
   padding: 13px;
@@ -121,6 +127,7 @@ button {
 .cards {
   display: flex;
   gap: 10px;
+  margin-bottom: 16px;
 }
 
 .card {
