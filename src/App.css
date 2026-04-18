@@ -116,10 +116,15 @@ button {
   width: 70%;
 }
 
+.landing-content button a{
+  color: white;
+}
+
 .landing-content button {
   width: fit-content;
   margin-bottom: 30px;
   outline: none;
+  color: white;
   background-color: var(--background-color);
 }
 
