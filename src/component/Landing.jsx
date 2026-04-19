@@ -24,7 +24,9 @@ function Landing() {
         <div className='landing-content'>
           <h1>شركة رائدة في مجال التكنولوجيا</h1>
           <p>نحن نقدم حلول تكنولوجية مبتكرة تلبي احتياجات عملائنا وتساعدهم على تحقيق أهدافهم.</p>
-          <button> <Link to="/InfoPage">ابدارحلتك العقاريه</Link> </button>
+          <Link to="/Info">  
+           <button> ابدارحلتك العقاريه </button>
+          </Link>
           <div className='cards'>
             <div className="card">
               <span >180+</span>
