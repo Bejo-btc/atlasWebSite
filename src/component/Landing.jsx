@@ -15,7 +15,7 @@ function Landing() {
             </ul>
           </nav>
           <div>
-            <img src="\image 5.jpg" alt="logo" className="logo" />
+            <img src="/image-5.jpg" alt="logo" className="logo" />
           </div>
         </div>
       </header>
@@ -24,7 +24,7 @@ function Landing() {
         <div className='landing-content'>
           <h1>شركة رائدة في مجال التكنولوجيا</h1>
           <p>نحن نقدم حلول تكنولوجية مبتكرة تلبي احتياجات عملائنا وتساعدهم على تحقيق أهدافهم.</p>
-          <Link to="/Info">  
+          <Link to="/InfoPage">  
            <button> ابدارحلتك العقاريه </button>
           </Link>
           <div className='cards'>
